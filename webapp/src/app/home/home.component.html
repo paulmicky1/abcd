@@ -1,0 +1,11 @@
+<div class="container">
+    <article id="article1">
+        <button id="colorButton" (click)="toggleTextAndColor()">Click Me</button>
+    </article>
+    <article id="article2">
+        <div class="text-container">
+            <p [style.color]="isRed ? 'red' : 'black'">{{ text1 }}</p>
+            <p>{{ text2 }}</p>
+        </div>
+    </article>
+</div>

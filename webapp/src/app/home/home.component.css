@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh; /* Full height */
+}
+
+article {
+    width: 50%; /* Each article takes 50% width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Added to position the button relative to the article */
+}
+
+#article1 {
+    background-color: #f0f0f0;
+}
+
+#article2 {
+    background-color: #e0e0e0;
+    justify-content: flex-start;
+    padding-left: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    position: absolute; /* Absolute positioning for the button */
+    top: 50%; /* Center the button vertically on the image */
+    left: 50%; /* Center the button horizontally on the image */
+    transform: translate(-50%, -50%); /* Adjust position to truly center */
+}
+
+button:focus {
+    outline: none;
+}
+
+.container img {
+    width: 50%;
+    height: auto;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
